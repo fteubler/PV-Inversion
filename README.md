@@ -22,7 +22,7 @@ and low-level flow component (Geopotential can be added easily, if required).
 
 # Installation
 To run the code the following python packages need to be installed:
-conda -c conda-forge numpy numba netcdf4 h5netcdf xarray eccodes scipy petsc petsc4py
+* conda -c conda-forge numpy numba netcdf4 h5netcdf xarray eccodes scipy petsc petsc4py
 
 # RUN
 The main file is run_PVI.py. Execute the PVinversion by simply running
