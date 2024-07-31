@@ -26,7 +26,7 @@ conda -c conda-forge numpy numba netcdf4 h5netcdf xarray eccodes scipy petsc pet
 
 # RUN
 The main file is run_PVI.py. Execute the PVinversion by simply running
-& python run_PVI.py
+* python run_PVI.py
 
 ## General comments and recommentations 
 * I recommend to calculate PV on your own (as it is done here) and do not use PV available in datasets
