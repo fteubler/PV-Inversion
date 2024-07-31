@@ -27,7 +27,7 @@ To run the code the following python packages need to be installed:
   
     $ conda -c conda-forge numpy numba netcdf4 h5netcdf xarray eccodes scipy petsc petsc4py
 
-# RUN
+# Run
 The main file is run_PVI.py. Execute the PVinversion by simply running
 
     $ python run_PVI.py
