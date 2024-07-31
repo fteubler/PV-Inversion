@@ -1,24 +1,26 @@
 This code package performs piecewise PV inversion as described in detail in 
-Teubler and Riemer 2016 (DOI: 10.1175/JAS-D-15-0162.1)
-The PV inversion code itself is based on 
-Davis 1992 (doi:10.1175/1520-0469(1992)049,1397: PPVI.2.0.CO;2.) and was strongly modified.
+[Teubler and Riemer 2016](https://doi.org/10.1175/JAS-D-15-0162.1) in a latitudinal belt on the northern
+hemisphere. The PV inversion code itself is based on 
+[Davis 1992](https://doi.org/10.1175/1520-0469(1992)049<1397:PPVI>2.0.CO;2).
+PV anomalies are defines as upper-level anomalies and low-level anomalies defined as deviations from
+a 30-day background field.
 
-# INPUT
+## INPUT
 The input file can be grib or netcdf and has to contain u,v,T and Geopotential on
 pressure levels. The programm will automatically interpolate on 17 pressure levels needed
-for PVI. The more pressure levels are available the better.
+for PVInversion. The more pressure levels are available the better.
 
-# OUTPUT
+## OUTPUT
 The output file will contain u and v for the balanced, the background, the upper-level,
 and low-level flow component (Geopotential can be added easily, if required).
 
-# INSTALL INSTRUCTIONS:
-To run the code as it is, the following python packages need to be installed:
+# Installation
+To run the code the following python packages need to be installed:
 conda -c conda-forge numpy numba netcdf4 h5netcdf xarray eccodes scipy petsc petsc4py
 
 # RUN
 The main file is run_PVI.py. Execute the PVinversion by simply running
-python run_PVI.py
+& python run_PVI.py
 
 # GENERAL COMMENTS: 
 * I recommend to calculate PV on your own (as it is done here) to avoid strange values within the mountains
