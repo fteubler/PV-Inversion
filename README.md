@@ -8,9 +8,11 @@ a 30-day background field.
 The development of the PV inversion was part of the PhD thesis of [Franziska Teubler](https://dynmet.ipa.uni-mainz.de/dr-franziska-teubler/) under the supervision
 of [Michael Riemer](https://dynmet.ipa.uni-mainz.de/pd-dr-michael-riemer/).
 
+[MIT License](LICENSE).
+
 ## INPUT
 * file with instantaneous fields
-* file with background information (e.g. temporal mean)
+* file with background information (e.g. temporal mean) to calculate anomalies
   
 The input files can be grib or netcdf and have to contain u,v,T and Geopotential on
 pressure levels. The programm will automatically interpolate on 17 pressure levels needed
