@@ -5,6 +5,9 @@ hemisphere. The PV inversion code itself is based on
 PV anomalies are defines as upper-level anomalies and low-level anomalies defined as deviations from
 a 30-day background field.
 
+The development of the PV inversion was part of the PhD thesis of [Franziska Teubler](https://dynmet.ipa.uni-mainz.de/dr-franziska-teubler/) under the supervision
+of [Michael Riemer](https://dynmet.ipa.uni-mainz.de/pd-dr-michael-riemer/).
+
 ## INPUT
 The input file can be grib or netcdf and has to contain u,v,T and Geopotential on
 pressure levels. The programm will automatically interpolate on 17 pressure levels needed
@@ -22,8 +25,8 @@ conda -c conda-forge numpy numba netcdf4 h5netcdf xarray eccodes scipy petsc pet
 The main file is run_PVI.py. Execute the PVinversion by simply running
 & python run_PVI.py
 
-# GENERAL COMMENTS: 
-* I recommend to calculate PV on your own (as it is done here) to avoid strange values within the mountains
+## General comments and recommentations 
+* I recommend to calculate PV on your own (as it is done here) and do not use PV available in datasets
 * Do not try to use a higher resosution than 1°x 1°; for higher resolution there will be no convergence 
     (nonlinear balance can not be reached)
-* I recommend a maximal meridional extend from 20°N to 85°N (better 80°N).
+* I recommend a maximal meridional extend from 20°N to 85°N (better 80°N). Further north and south balance condition will not be reached.
