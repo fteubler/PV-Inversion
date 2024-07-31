@@ -10,7 +10,7 @@ of [Michael Riemer](https://dynmet.ipa.uni-mainz.de/pd-dr-michael-riemer/).
 
 [MIT License](LICENSE).
 
-## INPUT
+### INPUT
 * file with instantaneous fields
 * file with background information (e.g. temporal mean) to calculate anomalies
   
@@ -18,7 +18,7 @@ The input files can be grib or netcdf and have to contain u,v,T and Geopotential
 pressure levels. The programm will automatically interpolate on 17 pressure levels needed
 for PVInversion. The more pressure levels are available the better.
 
-## OUTPUT
+### OUTPUT
 The output file will contain u and v for the balanced, the background, the upper-level,
 and low-level flow component (Geopotential can be added easily, if required).
 
